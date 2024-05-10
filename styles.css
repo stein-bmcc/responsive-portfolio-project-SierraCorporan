@@ -2,13 +2,14 @@
 
 
 
-img, video {
+img, video{
   width: auto;
   height: auto;
   max-width: 100%;
 }
 
 /* starting my grid layout */
+
 
 .grid{
     display: grid;
@@ -17,9 +18,11 @@ img, video {
     height: 150vh;
   }
 
+
   .grid a{
     color: black;
   }
+  
   
    .box.one {
     grid-column: span 8;
@@ -27,23 +30,19 @@ img, video {
 
    .boxtwo{
     grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-end: 3;
    }
 
    .boxthree{
-    grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-start: 4;
+    grid-column-end: 5;
    }
 
    .boxfour{
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 6;
+    grid-column-end: 7;
    }
 
-   .boxfive{
-    grid-column-start: 5;
-    grid-column-end: 8;
-   }
 
    .card {
     width: 500px;
@@ -117,8 +116,8 @@ img, video {
   }
 
 .heading{
-  text-align: center;
-  font-size: 28px;
+  text-align: left;
+  font-size: 30px;
   font-family: impact;
   margin-left: 10px;
 }
@@ -128,32 +127,54 @@ img, video {
 
 .illustrationgrid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
-   grid-auto-rows: minmax(150px, auto);
-   grid-gap: 20px;
-   height: 150vh;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-gap: 50px;
 }
 
 .illustrationbox1{
-  grid-column-start: 2;
-    grid-column-end: 4;
+  grid-column-start: 1;
+    grid-column-end: 2;
 }
 
 .illustrationbox2{
-  grid-column-start: 5;
-    grid-column-end: 8;
-}
-
-.illustrationbox3{
-  grid-column-start: 2;
+  grid-column-start: 3;
     grid-column-end: 4;
 }
 
-.illustrationbox4{
+.illustrationbox3{
   grid-column-start: 5;
-    grid-column-end: 8;
+    grid-column-end: 6;
 }
 
+.illustrationbox4{
+  grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.illustrationbox5{
+  grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.illustrationbox6{
+  grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+.illustrationbox7{
+  grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.illustrationbox8{
+  grid-column-start: 3;
+    grid-column-end: 4;
+}
+
+.illustrationbox9{
+  grid-column-start: 5;
+    grid-column-end: 6;
+}
 
 .illustrationgrid p{
   font-size: 18px;
@@ -175,10 +196,81 @@ padding-left: 20px;
 padding-top: 100px;
 }
 
+.aboutgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+   grid-row-gap: 10px;
+}
 
+.aboutmebox{
+  grid-column-start: 1;
+  grid-column-end: 8;
+}
 
+.aboutmebox00{
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
 
+.aboutmebox0{
+  grid-column-start: 3;
+  grid-column-end: 6;
+}
 
+.aboutmebox1{
+
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutmebox2{
+  grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.aboutmebox3{
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutmebox4{
+  grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.aboutmebox5{
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutmebox6{
+  grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.aboutmebox7{
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutmebox8{
+  grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.aboutmebox9{
+  grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.aboutmebox10{
+  grid-column-start: 3;
+    grid-column-end: 6;
+}
+
+.aboutmetext{
+  text-align: left;
+}
 
 
 
@@ -188,9 +280,7 @@ padding-top: 100px;
 .projectsgrid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-   grid-auto-rows: minmax(150px, auto);
-   grid-gap: 20px;
-   height: 100vh;
+  grid-row-gap: 50px;
 }
 
 .projectbox1{
@@ -199,18 +289,18 @@ padding-top: 100px;
  }
 
  .projectbox2 {
-  grid-column-start: 6;
-  grid-column-end: 8;
+  grid-column-start: 3;
+  grid-column-end: 4;
  }
 
  .projectbox3{
-  grid-column-start: 1;
-  grid-column-end: 2;
+  grid-column-start: 5;
+  grid-column-end: 6;
  }
 
  .projectbox4{
-  grid-column-start: 6;
-  grid-column-end: 8;
+  grid-column-start: 1;
+  grid-column-end: 2;
  }
 
 .projectheader{
@@ -247,3 +337,13 @@ font-family: impact;
       font-family: impact;
       }
 
+
+   .persona-card{
+width:300px;
+height:100px;
+}
+
+.header {
+  background-image: url('images/Untitled\ -\ Copy.png'); 
+  background-position: center;
+  height: 70vh;}
