@@ -9,14 +9,45 @@ img, video{
 }
 
 /* starting my grid layout */
-
-
+/* Css here for your base grid that applies to mobile devices */
 .grid{
-    display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    grid-gap: 20px;
-    height: 150vh;
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 20px;
+  /* height: 150vh; */
+}
+
+@media (min-width: 600px){
+  /* this applies to mobile in landscape and some tablets in portrait */
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
   }
+}/*   end min-width 600 */
+
+
+
+@media (min-width: 900px){
+   /* this applies to tablets */
+   .grid{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}/*   end min-width 900 */
+
+
+
+@media (min-width: 1200px){
+
+   /* this applies average laptops */
+
+}/*   end min-width 1200 */
+
+
+
+@media (min-width: 1800px){
+
+   /* this applies to large laptops and desktops */
+
+}/*   end min-width 1800 */
 
 
   .grid a{
@@ -24,7 +55,7 @@ img, video{
   }
   
   
-   .box.one {
+   /* .box.one {
     grid-column: span 8;
    }
 
@@ -41,11 +72,11 @@ img, video{
    .boxfour{
     grid-column-start: 6;
     grid-column-end: 7;
-   }
+   } */
 
 
    .card {
-    width: 500px;
+    /* width: 500px; */
     border: 1px solid #ccc;
     border-radius: 5px;
     overflow: hidden;
@@ -202,7 +233,7 @@ padding-top: 100px;
    grid-row-gap: 10px;
 }
 
-.aboutmebox{
+/* .aboutmebox{
   grid-column-start: 1;
   grid-column-end: 8;
 }
@@ -266,7 +297,7 @@ padding-top: 100px;
 .aboutmebox10{
   grid-column-start: 3;
     grid-column-end: 6;
-}
+} */
 
 .aboutmetext{
   text-align: left;
@@ -279,11 +310,12 @@ padding-top: 100px;
 
 .projectsgrid{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-row-gap: 50px;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 50px;
 }
 
-.projectbox1{
+/* .projectbox1{
   grid-column-start: 1;
   grid-column-end: 2;
  }
@@ -301,7 +333,7 @@ padding-top: 100px;
  .projectbox4{
   grid-column-start: 1;
   grid-column-end: 2;
- }
+ } */
 
 .projectheader{
   font-size: 40px;
