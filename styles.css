@@ -1,0 +1,270 @@
+
+
+
+
+img, video{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+/* starting my grid layout */
+
+
+.grid{
+    display: grid;
+    grid-template-columns: repea(1, 1fr);
+    grid-gap: 20px;
+  }
+
+
+  .grid a{
+    color: black;
+  }
+  
+  .heading{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 600px){
+    .grid{
+      grid-template-columns: repeat(1,1fr);
+    }
+  }
+  
+  @media (min-width: 900px){
+    .grid{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+
+  @media (min-width: 1200px){
+    .grid{
+      grid-template-columns: repeat(3,1fr);
+    }
+  }
+
+
+   .card {
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.card-image {
+    position: relative;
+}
+.card-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+.card:hover .card-image img {
+    opacity: 0;
+}
+.card-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    text-align: center;
+    display: none;
+    padding-top: 30%;
+}
+.card:hover .card-text {
+    display: block;
+}
+.card-title {
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card-description {
+    font-size: 14px;
+    color: #555;
+}
+
+
+
+   .topnav {
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+  }
+  
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.heading{
+  text-align: left;
+  font-size: 30px;
+  font-family: impact;
+  margin-left: 10px;
+}
+
+  
+  
+
+.illustrationgrid{
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+   grid-gap: 30px;
+}
+
+@media (min-width: 600px){
+  .illustrationgrid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (min-width: 900px){
+  .illustrationgrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 1200px){
+  .illustrationgrid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+.illustrationgrid p{
+  font-size: 18px;
+  text-align: left;
+}
+
+.illustrationtext{
+  padding-top: 30%;
+}
+
+.illustrationtext header{
+  font-size: 25px;
+  font-family: impact;
+}
+
+.illustrationgrid .card-text{
+text-align: left;
+padding-left: 20px;
+padding-top: 100px;
+}
+
+.aboutgrid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+   grid-row-gap: 10px;
+   max-width:900px;
+   margin: auto;
+}
+
+.aboutmetext{
+  text-align: left;
+}
+
+@media (min-width: 600px){
+  .aboutgrid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (min-width: 900px){
+  .aboutgrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 1200px){
+  .aboutgrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+.projectsgrid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minimax(350px, 1fr));
+  grid-gap: 50px;
+}
+
+
+.projectheader{
+  font-size: 40px;
+  text-align: center;
+  font-family: impact;
+}
+
+@media (min-width: 600px){
+  .projectsgrid{
+    grid-template-columns: repeat(1,1fr);
+  }
+}
+
+@media (min-width: 900px){
+  .projectsgrid{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
+
+@media (min-width: 1200px){
+  .projectsgrid{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+
+
+.project1grid header{
+font-size: 40px;
+text-align: center;
+font-family: impact;
+}
+
+.project2grid header{
+  font-size: 40px;
+  text-align: center;
+  font-family: impact;
+  }
+
+  .project3grid header{
+    font-size: 40px;
+    text-align: center;
+    font-family: impact;
+    }
+
+.project4grid header{
+      font-size: 40px;
+      text-align: center;
+      font-family: impact;
+      }
+
+
+.persona-card{
+width:300px;
+height:100px;
+}
+
+.header {
+  background-image: url('images/Untitled\ -\ Copy.png'); 
+  background-position: center;
+  height: 70vh;}
